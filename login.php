@@ -18,7 +18,7 @@ $password = md5($_POST["password"]);
   session_start();
   $_SESSION['loggedin'] = true;
   $_SESSION['username'] = $username;
-  header("Location: index2.html");
+  header("Location: /index2.html");
     }
 else{
     $showError = "Invalid Credentials";}
